@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "projectName": "STM32-CMake-base",
+    "configurations": [
+        {
+            "name": "JLink debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/STM32-CMake-base.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "STM32L4A6AG",
+            "interface": "swd",
+            "serverpath": "JLinkGDBServerCL",
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 16000000,
+                "swoFrequency": 4000000,
+                "source": "probe",
+                "decoders": [
+                    {
+                        "label": "ITM port 0 output",
+                        "type": "console",
+                        "port": 0,
+                        "showOnStartup": true,
+                        "encoding": "ascii"
+                    }
+                ]
+            }
+        }
+    ]
+}
