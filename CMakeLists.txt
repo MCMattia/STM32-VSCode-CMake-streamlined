@@ -95,11 +95,11 @@ target_compile_options(${PROJECT_NAME} PRIVATE
         -fstack-usage
         --specs=nano.specs
         >
-    $<$<COMPILE_LANGUAGE:AASM>:
+    $<$<COMPILE_LANGUAGE:ASM>:
         -g3
         -c
         -x
-        assembleer-with-cpp
+        assembler-with-cpp
         --specs=nano.specs
         >
 )
