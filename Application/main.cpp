@@ -1,8 +1,9 @@
 #include "main.h"
 #include "gpio.h"
 
-extern "C" {
-extern void SystemClock_Config();
+extern "C"
+{
+    extern void SystemClock_Config();
 }
 
 int main()
@@ -13,11 +14,11 @@ int main()
 
     MX_GPIO_Init();
 
-    while(true)
+    while (true)
     {
-   	    HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
         HAL_Delay(1000);
-        HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
         HAL_Delay(1000);
     }
 }

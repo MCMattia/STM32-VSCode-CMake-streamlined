@@ -1,0 +1,1 @@
+Checks: "modernize*, bugprone-*, -modernize-use-trailing-return-type, -modernize-avoid-c-arrays, -modernize-use-nodiscard, -bugprone-easily-swappable-parameters, -bugprone-dynamic-static-initializers"
