@@ -1,4 +1,5 @@
 {
-    "cortex-debug.gdbPath": "arm-none-eabi-gdb",
-    "clangd.arguments": ["--query-driveeer=/opt/st/stm32cubeide_1.15.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin/arm-none-eabi-gcc"]
+    "cortex-debug.gdbPath": "/opt/st/stm32cubeide_1.15.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin/arm-none-eabi-gdb",
+    "cortex-debug.JLinkGDBServerPath": "opt/st/stm32cubeide_1.15.0/plugins/com.st.stm32cube.ide.mcu.externaltools.jlink.linux64_2.2.200.202402092224/tools/bin/JLinkGDBServer",
+    "clangd.arguments": ["--query-driver=/opt/st/stm32cubeide_1.15.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin/arm-none-eabi-gcc"]
 }

@@ -7,7 +7,7 @@ set(PROJECT_TYPE_STATIC_LIBRARY      "static-lib")
 
 set(PROJECT_NAME                     "STM32-CMake-base")
 set(PROJECT_TYPE                     "exe")
-set(LINKER_SCRIPT                    "${CMAKE_CURRENT_SOURCE_DIR}/STM32L4A6AGIX_FLASH.ld")
+set(LINKER_SCRIPT                    "${CMAKE_CURRENT_SOURCE_DIR}/STM32L4A6ZGTX_FLASH.ld")
 set(MCPU                             "-mcpu=cortex-m4")
 set(MFPU                             "-mfpu=fpv4-sp-d16")
 set(MFLOAT_ABI                       "-mfloat-abi=hard")
@@ -16,12 +16,13 @@ set(RUNTIME_LIBRARY_SYSCALLS         "--specs=nosys.specs")
 
 set(PROJECT_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/main.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/gpio.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/stm32l4xx_hal_msp.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/stm32l4xx_it.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/syscalls.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/sysmem.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/system_stm32l4xx.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/Core/Startup/startup_stm32l4a6agix.s
+    ${CMAKE_CURRENT_SOURCE_DIR}/Core/Startup/startup_stm32l4a6zgtx.s
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
