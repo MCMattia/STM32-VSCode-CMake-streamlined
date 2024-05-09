@@ -5,6 +5,7 @@
         {
             "name": "JLink debug",
             "cwd": "${workspaceRoot}",
+            "preLaunchTask": "CMake: build",
             "executable": "${workspaceRoot}/build/STM32-CMake-base.elf",
             "request": "launch",
             "type": "cortex-debug",
@@ -12,7 +13,6 @@
             "device": "STM32L4A6ZG",
             "interface": "swd",
             "serverpath": "JLinkGDBServerCL",
-            "preLaunchTask": ["build"],
             "swoConfig": {
                 "enabled": true,
                 "cpuFrequency": 16000000,
@@ -31,6 +31,7 @@
         },
         {
             "name": "ST-Link debug",
+            "preLaunchTask": "CMake: build",
             "cwd": "${workspaceRoot}",
             "executable": "${workspaceRoot}/build/STM32-CMake-base.elf",
             "request": "launch",
@@ -38,7 +39,6 @@
             "servertype": "stutil",
             "device": "STM32L4A6ZG",
             "interface": "swd",
-            "preLaunchTask": ["build"],
         }
     ]
 }
