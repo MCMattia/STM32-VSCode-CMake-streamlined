@@ -5,7 +5,7 @@ message("Entering ${CMAKE_CURRENT_LIST_FILE}")
 set(PROJECT_TYPE_EXECUTABLE          "exe")
 set(PROJECT_TYPE_STATIC_LIBRARY      "static-lib")
 
-set(PROJECT_NAME                     "STM32-CMake-base")
+set(PROJECT_NAME                     "STM32-VSCode-CMake-streamlined")
 set(PROJECT_TYPE                     "exe")
 set(LINKER_SCRIPT                    "${CMAKE_CURRENT_SOURCE_DIR}/STM32L4A6ZGTX_FLASH.ld")
 set(MCPU                             "-mcpu=cortex-m4")

@@ -1,12 +1,12 @@
 {
     "version": "0.2.0",
-    "projectName": "STM32-CMake-base",
+    "projectName": "STM32-VSCode-CMake-streamlined",
     "configurations": [
         {
             "name": "JLink debug",
             "cwd": "${workspaceRoot}",
             "preLaunchTask": "CMake: build",
-            "executable": "${workspaceRoot}/build/STM32-CMake-base.elf",
+            "executable": "${workspaceRoot}/build/STM32-VSCode-CMake-streamlined.elf",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "jlink",
@@ -33,7 +33,7 @@
             "name": "ST-Link debug",
             "preLaunchTask": "CMake: build",
             "cwd": "${workspaceRoot}",
-            "executable": "${workspaceRoot}/build/STM32-CMake-base.elf",
+            "executable": "${workspaceRoot}/build/STM32-VSCode-CMake-streamlined.elf",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "stutil",
